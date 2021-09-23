@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/bg-default.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  position: relative;
+}
+
+.changeLangBtnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.changeLangBtnContainer .title{
+  color: #fdfdfd;
+  margin-bottom: 5px;
+}
+
+.btn-item button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+  color: #fdfdfd;
+}
+
+.btn-item button:hover {
+  color: #0077b6;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: 1000px;
+  justify-content: space-around;
+}
+.list .item {
+  width: 300px;
+  margin-bottom: 25px;
+  color: white;
+  transition: box-shadow 0.8s;
+}
+.list .item:hover {
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 5px 10px 15px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.list .item:hover .preview {
+  filter: brightness(1.8);
+}
+.list .preview {
+  transition: filter 0.8s;
+  position: relative;
+}
+.list .preview::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/404_preview-320x180.jpg");
+  /*position: absolute 不佔位*/
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.list .preview img {
+  width: 100%;
+  height: 168px;
+  display: block;
+  /*position: relative 會佔位*/
+  position: relative;
+  /*一開始 opacity 設透明，圖片載入完就將載入完成的圖片顯示出來*/
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+
+.item .content {
+  display: flex;
+  align-items: center;
+  background-color: rgba(1, 1, 1, 0.3);
+  transition: background-color 1s;
+  padding: 10px;
+}
+.item .content .avatar {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.item .content .avatar img {
+  position: relative;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.item .content .text {
+  margin-left: 10px;
+}
+
+.item .content .text h3, .item .content p {
+  margin-bottom: 3px;
+  white-space: nowrap;
+  width: 230px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*# sourceMappingURL=test1.css.map */
