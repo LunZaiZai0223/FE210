@@ -1,8 +1,8 @@
 // Twitch API
 
-const clientId = 'v4cbdvjc8zf6pj6mrogkycdx0h51z0';
-const clientSecret = '3f9vav3u6iqdakjzx5668si7itdcfp';
-const OAuthToken = 'Bearer 6enwr0jv7bz7r9jc1lzenekqckxq7z';
+// const clientId = '在 env 裡';
+// const clientSecret = '在 env 裡';
+// const OAuthToken = '在 env 裡';
 const gameName = 'League of Legends';
 const gameId = '21779';
 const limit = 12;

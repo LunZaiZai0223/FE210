@@ -4,10 +4,10 @@ if (process.env.NODE_ENV !== "production") {
 // 環境變數的設定！？？？？？？？？？？？
 // 我看還是先做 RWD XD
 
-const getLang = require('./utils.js');
+const getLang = require('../../utils/utils.js');
 // 要打包套件的話就把套件用 npm 下載引用
 const axios = require('axios');
-const contentObj = require('./i18n/content.js');
+const contentObj = require('../../i18n/content.js');
 
 const clientId = process.env.CLIENTID;
 const OAuthToken = process.env.OAUTHTOKEN;
@@ -118,9 +118,11 @@ function createItemDiv (data) {
     let originalThumbnailUrl = d.thumbnail_url;
     originalThumbnailUrl = originalThumbnailUrl.replace('{width}x{height}', '320x180');
     itemDiv.innerHTML = `
-         <div class=preview>
+        <a href=https://www.twitch.tv/${d.user_login} target=_blank>
+           <div class=preview>
             <img src=${originalThumbnailUrl} onload=this.style.opacity=1;>
-        </div>
+          </div>
+        </a>
         <div class=content>
             <div class=text>
                 <h3>${d.title}</h3>

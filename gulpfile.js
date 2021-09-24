@@ -20,10 +20,10 @@ const { series, parallel } = require('gulp');
 // 需要告知 gulp 任務已經完成，需要調用 callback
 gulp.task('minify-css', function(callback){
 	gulp
-	.src('./test1.css')
+	.src('./src/stylesheets/test1.css')
     .pipe(cleanCSS())
     .pipe(rename('test1.min.css'))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('public'));
     callback();
 });
 
@@ -46,7 +46,7 @@ gulp.task('inline', function(callback){
 	.src('./index.html')
 	.pipe(inline())
 	.pipe(rename('index.min.html'))
-	.pipe(gulp.dest('./'));
+	.pipe(gulp.dest('public'));
 	callback();
 });
 
