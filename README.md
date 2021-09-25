@@ -3,7 +3,20 @@
 <br>接下來會花一些時間整理代碼、實踐 RWD 以及稍微更新專案的排版。
 ## 為什麼會上這門課程？
 看到 ptt 文章 [一個基礎前端自學者的方向請益](https://www.ptt.cc/bbs/Soft_Job/M.1623349112.A.401.html) 底下有人推文推薦，我查了一下，剛好發現這個課程就是開給剛完成線上課程的人測驗自己能力用的，所以我就拿來測試自己的能力了XDD。
+## 專案網址及預覽
+網址：https://lunzaizai0223.github.io/FE210/
+<img width="1000" alt="螢幕快照 2021-09-25 14 31 15" src="https://user-images.githubusercontent.com/77038018/134761544-dd1ff837-e8d8-4e4d-b768-bebd18d6f75c.png">
+<img width="270" alt="螢幕快照 2021-09-25 14 36 46" src="https://user-images.githubusercontent.com/77038018/134761547-d1e17fe2-fe31-4ff4-b30b-757f8b5cd332.png">
+## Build with
+- HTML
+- CSS(SASS)
+- JavaScript
+- Axios 串接 API
+- Webpack 打包檔案
+- Gulp-inline 將 CSS 及 JavaScript 寫在 HTML 裡
+- 圖片皆取自於課程：[[FE210] 從新手到中手：前端工程加強班](https://lidemy.com/p/frontend-intermediate-course)
 ## 時程
 上課時數(含做作業)： 09/09 - 09/23，共 15 天(約 110 小時)
 - 2021/09/23 課程專案完成
 - 2021/09/24 整理檔案(1)、基礎 RWD 設置完成
+- 2021/09/25 整理檔案(2-end)、 RWD 完成
