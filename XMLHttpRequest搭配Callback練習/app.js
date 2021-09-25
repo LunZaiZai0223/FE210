@@ -1,8 +1,8 @@
 // Twitch API
 
-// const clientId = '在 env 裡';
-// const clientSecret = '在 env 裡';
-// const OAuthToken = '在 env 裡';
+const clientId = '在 env 裡';
+const clientSecret = '在 env 裡';
+const OAuthToken = '在 env 裡';
 const gameName = 'League of Legends';
 const gameId = '21779';
 const limit = 12;
@@ -388,8 +388,8 @@ window.addEventListener('scroll', (event) => {
 
 // function getStreams(queryString, callback) {
 //     const apiUrl = 'https://api.twitch.tv/helix/streams';
-//     const clientId = 'v4cbdvjc8zf6pj6mrogkycdx0h51z0';
-//     const OAuthToken = 'Bearer 6enwr0jv7bz7r9jc1lzenekqckxq7z';
+//     const clientId = '在 env 裡';
+//     const OAuthToken = '在 env 裡';
 //     const xhr = new XMLHttpRequest();
 //     xhr.open('GET', apiUrl + queryString, true);
 //     xhr.setRequestHeader('client-id', clientId);
@@ -409,8 +409,8 @@ window.addEventListener('scroll', (event) => {
 // }
 
 // function getUsersID(apiUrl){
-//     const clientId = 'v4cbdvjc8zf6pj6mrogkycdx0h51z0';
-//     const OAuthToken = 'Bearer 6enwr0jv7bz7r9jc1lzenekqckxq7z';
+//     const clientId = '在 env 裡';
+//     const OAuthToken = '在 env 裡';
 //     const xhr = new XMLHttpRequest();
 //     xhr.open('GET', apiUrl, true);
 //     xhr.setRequestHeader('client-id', clientId);
