@@ -46,7 +46,7 @@ gulp.task('inline', function(callback){
 	.src('./index.html')
 	.pipe(inline())
 	.pipe(rename('index.min.html'))
-	.pipe(gulp.dest('public'));
+	.pipe(gulp.dest('./'));
 	callback();
 });
 
