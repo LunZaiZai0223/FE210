@@ -43,9 +43,9 @@ gulp.task('minify-css', function(callback){
 
 gulp.task('inline', function(callback){
 	gulp
-	.src('./index.html')
+	.src('./index.original.html')
 	.pipe(inline())
-	.pipe(rename('index.min.html'))
+	.pipe(rename('index.html'))
 	.pipe(gulp.dest('./'));
 	callback();
 });
