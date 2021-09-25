@@ -6,12 +6,12 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-default.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./src/images/bg-default.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   height: 100%;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   position: relative;
 }
@@ -38,6 +38,29 @@ body .btn-item button:hover {
   color: #0077b6;
 }
 
+.goback-top-btn-container {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  display: none;
+  z-index: 99;
+}
+.goback-top-btn-container button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: #dddd;
+  font-weight: 900;
+  transition: background-color, color 0.3s ease-in;
+}
+.goback-top-btn-container button:hover {
+  background-color: #333;
+  cursor: pointer;
+  color: #fdfdfd;
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +85,11 @@ body .btn-item button:hover {
 .list .item:hover .preview {
   filter: brightness(1.8);
 }
+@media screen and (max-width: 520px) {
+  .list .item {
+    max-width: 100%;
+  }
+}
 .list .preview {
   transition: filter 0.8s;
   position: relative;
@@ -70,7 +98,9 @@ body .btn-item button:hover {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("../images/404_preview-320x180.jpg");
+  background-image: url("./src/images/404_preview-320x180.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   /*position: absolute 不佔位*/
   position: absolute;
   top: 0;
@@ -85,6 +115,51 @@ body .btn-item button:hover {
   /*一開始 opacity 設透明，圖片載入完就將載入完成的圖片顯示出來*/
   opacity: 0;
   transition: opacity 0.8s ease-in;
+}
+.list .preview .live-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #e53946;
+  z-index: 2;
+  padding: 0 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+}
+.list .preview .live-container p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fdfdfd;
+}
+.list .preview .viewer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 0.25rem;
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+}
+.list .preview .viewer-container p {
+  font-size: 14px;
+  color: #fdfdfd;
+}
+.list .reminder-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.list .reminder-container p {
+  color: #fdfdfd;
+}
+.list .maintain {
+  width: 300px;
+  margin-bottom: 25px;
+  color: white;
+  transition: box-shadow 0.8s;
+  flex: 1 0 auto;
+  max-width: 50%;
+  padding: 0 0.25rem;
 }
 
 .item .content {
